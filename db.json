@@ -1,0 +1,224 @@
+{
+    "data": [
+        {
+            "house": {
+                "image": "img/avatars/user04.png"
+            },
+            "offer": {
+                "title": "ЖК Ильинские луга",
+                "timeToMetro": 10,
+                "deadline": "сдан",
+                "metro": "Октябрьская",
+                "adress": "пр. Льва Толстого 180А",
+                "features": [
+                    "Двор без машин",
+                    "Панорамные окна"
+                ]
+            }
+        },
+        {
+            "house": {
+                "image": "img/avatars/user07.png"
+            },
+            "offer": {
+                "title": "ЖК Марусина лужа",
+                "timeToMetro": 18,
+                "deadline": "в этом году",
+                "metro": "Новослободская",
+                "adress": "пр. Уныния 13",
+                "features": [
+                    "Двор без машин",
+                    "Малоэтажный",
+                    "Есть кладовые"
+                ]
+            }
+        },
+        {
+            "house": {
+                "image": "img/avatars/user07.png"
+            },
+            "offer": {
+                "title": "ЖК Иван да Марья",
+                "timeToMetro": 25,
+                "deadline": "в следующем году",
+                "metro": "Киевская",
+                "adress": "ул. Жмурки 149",
+                "features": [
+                    "Двор без машин",
+                    "Малоэтажный",
+                    "Магазин в доме"
+                ]
+            }
+        },
+        {
+            "house": {
+                "image": "img/avatars/user07.png"
+            },
+            "offer": {
+                "title": "ЖК Молодёжный",
+                "timeToMetro": 35,
+                "deadline": "сдан",
+                "metro": "Парк Победы",
+                "adress": "ул. Любви 19",
+                "features": [
+                    "Высокие потолки",
+                    "Панорамные окна",
+                    "Магазин в доме"
+                ]
+            }
+        },
+        {
+            "house": {
+                "image": "img/avatars/user07.png"
+            },
+            "offer": {
+                "title": "ЖК Молодёжный",
+                "timeToMetro": 35,
+                "deadline": "сдан",
+                "metro": "Парк Победы",
+                "adress": "ул. Любви 19",
+                "features": [
+                    "Высокие потолки",
+                    "Панорамные окна",
+                    "Магазин в доме"
+                ]
+            }
+        },
+        {
+            "house": {
+                "image": "img/avatars/user07.png"
+            },
+            "offer": {
+                "title": "ЖК Пенсионный",
+                "timeToMetro": 10,
+                "deadline": "сдан",
+                "metro": "Киевская",
+                "adress": "пр. Пенсии 1",
+                "features": [
+                    "Есть кладовые",
+                    "Панорамные окна",
+                    "Магазин в доме"
+                ]
+            }
+        },
+        {
+            "house": {
+                "image": "img/avatars/user07.png"
+            },
+            "offer": {
+                "title": "ЖК Звериный",
+                "timeToMetro": 50,
+                "deadline": "В следующем году",
+                "metro": "Солярис",
+                "adress": "ул. Дальняя 259",
+                "features": [
+                    "Высокие потолки",
+                    "Панорамные окна",
+                    "Есть детская площадка"
+                ]
+            }
+        },
+        {
+            "house": {
+                "image": "img/avatars/user07.png"
+            },
+            "offer": {
+                "title": "ЖК Убитый",
+                "timeToMetro": 25,
+                "deadline": "В этом году",
+                "metro": "Три ублюдка",
+                "adress": "ул. Зелёная 13",
+                "features": [
+                    "Высокие потолки",
+                    "Панорамные окна",
+                    "Магазин в доме"
+                ]
+            }
+        },
+        {
+            "house": {
+                "image": "img/avatars/user07.png"
+            },
+            "offer": {
+                "title": "ЖК Детский",
+                "timeToMetro": 10,
+                "deadline": "Сдан",
+                "metro": "Карамелька",
+                "adress": "ул. Детская 10",
+                "features": [
+                    "Панорамные окна",
+                    "Магазин в доме",
+                    "Есть детская площадка"
+                ]
+            }
+        },
+        {
+            "house": {
+                "image": "img/avatars/user07.png"
+            },
+            "offer": {
+                "title": "ЖК Шумахер",
+                "timeToMetro": 5,
+                "deadline": "Сдан",
+                "metro": "Формула-1",
+                "adress": "ул. Скоростная 100",
+                "features": [
+                    "Есть парковка для машин",
+                    "Магазин в доме",
+                    "Есть детская площадка"
+                ]
+            }
+        },
+        {
+            "house": {
+                "image": "img/avatars/user07.png"
+            },
+            "offer": {
+                "title": "ЖК Дальний",
+                "timeToMetro": 55,
+                "deadline": "В следующем году",
+                "metro": "Хуторок",
+                "adress": "ул. Последняя 105",
+                "features": [
+                    "Есть парковка для машин",
+                    "Магазин в доме",
+                    "Малоэтажный"
+                ]
+            }
+        },
+        {
+            "house": {
+                "image": "img/avatars/user07.png"
+            },
+            "offer": {
+                "title": "ЖК Звериный",
+                "timeToMetro": 14,
+                "deadline": "В этом году",
+                "metro": "Зоопарк",
+                "adress": "ул. Полосатая 15",
+                "features": [
+                    "Двор без машин",
+                    "Магазин в доме",
+                    "Малоэтажный"
+                ]
+            }
+        },
+        {
+            "house": {
+                "image": "img/avatars/user07.png"
+            },
+            "offer": {
+                "title": "ЖК Пожарный",
+                "timeToMetro": 5,
+                "deadline": "Сдан",
+                "metro": "Огнеупорная",
+                "adress": "пр. Огнеборцев 1",
+                "features": [
+                    "Высокие потолки",
+                    "Магазин в доме",
+                    "Есть детская площадка"
+                ]
+            }
+        }
+    ]
+}
