@@ -10,9 +10,9 @@
 	<div class="site-container">
 		<div class="container">
 			<div class="row">
-				<main class="main cards-holder">
+				<main class="main">
 					<!-- Card -->
-
+					<div class="cards-holder"></div>
 					<!-- End Card -->
 					<button class="btn-more">
 						<img src="img/plus-circle.svg" alt="Показать ещё">
@@ -160,27 +160,29 @@
 			</div>
 		</div>
 	</div>
+
 	<template id="card">
-		<div class="card__wrap">
-			<a class="card-link" href="#">
-				<div class="card">
-					<div class="card__badges">
-						<div class="card__badge comfort">Комфорт</div>
-						<div class="card__badge credit">Рассрочка 12 мес.</div>
-					</div>
-					<div class="card__img">
-						<img class="card__image" src="img/card.jpg" alt="ЖК Ильинские луга">
-					</div>
-					<div class="card__content">
-						<h4 class="card__title">ЖК Ильинские луга</h4>
-						<div class="card__term">Срок сдачи до 4 кв. 2022 г.</div>
-						<div class="card__metro">Октябрьская</div>
-						<div class="card__address">пр. Льва Толстого 180А</div>
-					</div>
+		
+		<a class="card-link" href="#">
+			<div class="card">
+				<div class="card__badges">
+					<div class="card__badge comfort">Комфорт</div>
+					<div class="card__badge credit">Рассрочка 12 мес.</div>
 				</div>
-			</a>
-		</div>
+				<div class="card__img">
+					<img class="card__image" src="img/card.jpg" alt="ЖК Ильинские луга">
+				</div>
+				<div class="card__content">
+					<h4 class="card__title">ЖК Ильинские луга</h4>
+					<div class="card__term">Срок сдачи до 4 кв. 2022 г.</div>
+					<div class="card__metro">Октябрьская</div>
+					<div class="card__address">пр. Льва Толстого 180А</div>
+				</div>
+			</div>
+		</a>
+		
 	</template>
+	
 	<script src="js/index.js" type="module"></script>
 </body>
 </html>
