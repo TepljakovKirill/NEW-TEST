@@ -1,34 +1,39 @@
-/**
- *
- * @returns {Promise<void>}
- */
-const btnMore = document.querySelector(".btn-more")
-/* Текущая страница */
-let currentPage = 1;
-/* количество объявлений на странице */
-const countItem = 3;
-/* сюда запишем массив полученный с сервера */
-let arrayCard = [];
+let totalCards = [];
+let card = document.querySelector('.cards-holder');
+let btnMore = document.querySelector('.btn-more');
 
-btnMore.addEventListener('click', createLoader);
-
-async function loader() {
-	let response = await fetch("http://localhost:3000/data");
+async function createLoader() {
+	let response = await fetch("db.json");
 	let arrayCard = await response.json();
-	return arrayCard;
-};
 
-function createLoader(array = []) {
-	if(array.length) {
-		arrayCard = array;
-	}
-	let card = document.querySelector('.cards-holder');
-	let key = countItem * (currentPage - 1);
-	console.log(key);
-	for(key; key < arrayCard.length; key++) {
-		/* индекс не больше длинны массива, и не больше количества выводимых страниц */
-		if(arrayCard.length > countItem * currentPage && key <= countItem * currentPage - 1) {
-			card.innerHTML += `
+	totalCards = arrayCard;
+
+	//перебераем весь массив с объектами с помощью map и добавляем в объект свойство addList как флаг
+	let sliceTotalCards = totalCards.map(function(addBlock) {
+		for(let i = 0; i <= totalCards.length; i++) {
+			if(i <= 8) {
+				totalCards[i].addList = true;
+			}
+		}
+		return addBlock;
+	})
+
+	console.log(sliceTotalCards);
+//ты тут прописал двойной цикл map  в мапе еще раз for, то есть по массиву скрипт пробежится 52 раза вместо 1-го
+	let finalList = sliceTotalCards.map(function() {
+		for(let i = 0; i < sliceTotalCards.length; i++) {
+			console.log(sliceTotalCards[i].addList !== undefined) //почему эта строчка и ВЫПОНЯЕТСЯ И ПИШИТ ОШИБКУ????
+			// выполняется пока sliceTotalCards[i] не равно undefined, а равно undefined оно из-за неверного условия, равно не нужно
+		}
+	})
+
+
+	//Для того что бы обрезать массив достаточно
+	const slicedArr = arrayCard.slice (0, 8);
+
+	let key;
+	for(key in slicedArr) {
+		card.innerHTML += `
 		<a class="card-link" href="#">
 			<div class="card">
 				<div class="card__badges">
@@ -47,20 +52,11 @@ function createLoader(array = []) {
 			</div>
 		</a>
 		`
-		} else if(arrayCard.length < countItem * currentPage ) {
-			alert("конец")
-			document.querySelector(".btn-more").disabled = true;
-			return;
-		} else if(key > countItem * currentPage - 1) {
-			currentPage++;
-			return currentPage;
-		}
+	}
+	btnMore.addEventListener('click', more);
+	function more() {
+		alert('ok');
 	}
 }
-function showError () {}
 
-loader()
-	.then(
-		result => createLoader(result),
-		error => showError(error)
-		);
+createLoader();
