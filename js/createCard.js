@@ -1,12 +1,10 @@
 
-async function createLoader() {
-	let response = await fetch("http://localhost:3000/data");
-	let arrayCard = await response.json();
+let card = document.querySelector('.cards-holder');
+let btnMore = document.querySelector('.btn-more');
 
-	let card = document.querySelector('.cards-holder');
-
+function createList(arrCard) {
 	let key;
-	for(key in arrayCard) {
+	for(key in arrCard) {
 		card.innerHTML += `
 		<a class="card-link" href="#">
 			<div class="card">
@@ -28,5 +26,33 @@ async function createLoader() {
 		`
 	}
 }
+
+let arrayCard;
+let slicedArr;
+
+async function createLoader() {
+	let response = await fetch("http://localhost:3000/data");
+	arrayCard = await response.json();
+
+	slicedArr = arrayCard.slice (0, 9);
+	createList(slicedArr);
+}
+
+let counter = 0;
+
+function more() {
+	if((slicedArr.length + counter) === 9 + counter) {
+		card.innerHTML = "";
+		counter += 3;
+	} 
+	let nextList = arrayCard.slice (0, (9 + counter));
+	createList(nextList);
+	
+	if(nextList.length === arrayCard.length) {
+		btnMore.disabled = true;
+	}
+}
+
+btnMore.addEventListener('click', more);
 
 createLoader();
