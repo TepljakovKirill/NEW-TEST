@@ -56,3 +56,7 @@ function more() {
 btnMore.addEventListener('click', more);
 
 createLoader();
+
+export { arrayCard };
+export { card };
+export { createList };

@@ -26,20 +26,20 @@
 							<div class="widget__body">
 								<div class="location">
 									<div class="location__row">
-										<input type="checkbox" id="location-01" checked class="location__checkbox">
-										<label class="location__btn" for="location-01">&lt; 10</label>
+										<input type="checkbox" id="location-01" name='group' class="location__checkbox" checked>
+										<label class="location__btn" for="location-01">10</label>
 
-										<input type="checkbox" id="location-02" class="location__checkbox">
+										<input type="checkbox" id="location-02" name='group' class="location__checkbox">
 										<label class="location__btn" for="location-02">10-20</label>
 
-										<input type="checkbox" id="location-03" class="location__checkbox">
+										<input type="checkbox" id="location-03" name='group' class="location__checkbox">
 										<label class="location__btn" for="location-03">20-30</label>
 
-										<input type="checkbox" id="location-04" class="location__checkbox">
+										<input type="checkbox" id="location-04" name='group' class="location__checkbox">
 										<label class="location__btn" for="location-04">30+</label>
 									</div>
 									<div class="location__row">
-										<input type="checkbox" id="location-05" class="location__checkbox">
+										<input type="checkbox" id="location-05" name='group' class="location__checkbox">
 										<label class="location__btn" for="location-05">Любая</label>
 									</div>
 								</div>
@@ -51,13 +51,13 @@
 							<div class="widget__body">
 
 								<label class="radio">
-									<input type="radio" class="radio__real" name="term" checked>
+									<input type="radio" class="radio__real any" name="term" checked>
 									<span class="radio__fake"></span>
 									<span class="radio__title">Любой</span>
 								</label>
 
 								<label class="radio">
-									<input type="radio" class="radio__real" name="term">
+									<input type="radio" class="radio__real passed" name="term">
 									<span class="radio__fake"></span>
 									<span class="radio__title">Сдан</span>
 								</label>
@@ -160,28 +160,6 @@
 			</div>
 		</div>
 	</div>
-
-	<template id="card">
-		
-		<a class="card-link" href="#">
-			<div class="card">
-				<div class="card__badges">
-					<div class="card__badge comfort">Комфорт</div>
-					<div class="card__badge credit">Рассрочка 12 мес.</div>
-				</div>
-				<div class="card__img">
-					<img class="card__image" src="img/card.jpg" alt="ЖК Ильинские луга">
-				</div>
-				<div class="card__content">
-					<h4 class="card__title">ЖК Ильинские луга</h4>
-					<div class="card__term">Срок сдачи до 4 кв. 2022 г.</div>
-					<div class="card__metro">Октябрьская</div>
-					<div class="card__address">пр. Льва Толстого 180А</div>
-				</div>
-			</div>
-		</a>
-		
-	</template>
 	
 	<script src="js/index.js" type="module"></script>
 </body>
