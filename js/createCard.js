@@ -16,10 +16,10 @@ function createList(arrCard) {
 					<img class="card__image" src="img/card.jpg" alt="ЖК Ильинские луга">
 				</div>
 				<div class="card__content">
-					<h4 class="card__title">${arrayCard[key].offer.title}</h4>
-					<div class="card__term">${arrayCard[key].offer.deadline}</div>
-					<div class="card__metro">${arrayCard[key].offer.metro}</div>
-					<div class="card__address">${arrayCard[key].offer.adress}</div>
+					<h4 class="card__title">${arrCard[key].offer.title}</h4>
+					<div class="card__term">${arrCard[key].offer.deadline}</div>
+					<div class="card__metro">${arrCard[key].offer.metro}</div>
+					<div class="card__address">${arrCard[key].offer.adress}</div>
 				</div>
 			</div>
 		</a>

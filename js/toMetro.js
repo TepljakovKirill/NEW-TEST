@@ -1,12 +1,12 @@
-const btnLocation = document.querySelector("#location-05");
-const locationCheckbox = document.querySelectorAll(".location__checkbox");
+const listButtonTime = Array.from(document.querySelectorAll('.location__checkbox'));
 
-function deliteChecked() {
-	locationCheckbox.forEach(function (onChecked) {
-		if (btnLocation.checked) {
-			onChecked.checked = false;
-		}
-	});
-}
-
-btnLocation.addEventListener("click", deliteChecked);
+listButtonTime.forEach((elem) => {
+    elem.addEventListener('click', (evt) => {
+        listButtonTime.forEach((clear) => {
+            if(clear.checked) {
+                clear.checked = false;
+            }
+        })
+        evt.target.checked = true;
+    })
+})
