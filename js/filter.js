@@ -2,6 +2,7 @@ import { arrayCard } from './createCard.js';
 import { card } from './createCard.js';
 import { createList } from './createCard.js';
 import { createDeadLineList } from './createDeadLineList.js';
+import { createOptionsList } from './createOptionsList.js';
 
 const buttonFilter = document.querySelector('.form-btn--submit');
 
@@ -27,6 +28,10 @@ buttonFilter.addEventListener('click', (evt) => {
         });
 
         const dead = createDeadLineList();
+
+        const options = createOptionsList();
+        console.log(options);
+
         console.log(dead);
         createList(dead);
         clearLocationList();
@@ -95,6 +100,7 @@ buttonFilter.addEventListener('click', (evt) => {
 })
 
 export { locationList };
+// export { dead };
 
 
 
