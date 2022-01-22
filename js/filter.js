@@ -11,6 +11,7 @@ function clearLocationList() {
 }
 
 let locationList = [];
+let dead = [];
 
 buttonFilter.addEventListener('click', (evt) => {
     evt.preventDefault();
@@ -27,14 +28,13 @@ buttonFilter.addEventListener('click', (evt) => {
             }
         });
 
-        const dead = createDeadLineList();
+        dead = createDeadLineList();  //отфильтрованный locationList функцией createDeadLineList добавляем в пустой массив и отправляем его на следующую фильтровку в createOptionsList
 
-        const options = createOptionsList();
+        const options = createOptionsList();  //отфильтрованный массив dead
+
         console.log(options);
-
-        console.log(dead);
-        createList(dead);
-        clearLocationList();
+        createList(options);  // создаём список после фильтра createDeadLineList и createOptionsList
+        clearLocationList();  // чистим список для следующего обновления
     }
 
     // если выбран диапазон времени от дома до метро ОТ 10 - 20 МИНУТ
@@ -46,10 +46,13 @@ buttonFilter.addEventListener('click', (evt) => {
             }
         });
         
-        const dead = createDeadLineList();
-        console.log(dead);
-        createList(dead);
-        clearLocationList();
+        dead = createDeadLineList();  //отфильтрованный locationList функцией createDeadLineList добавляем в пустой массив и отправляем его на следующую фильтровку в createOptionsList
+
+        const options = createOptionsList();  //отфильтрованный массив dead
+
+        console.log(options);
+        createList(options);  // создаём список после фильтра createDeadLineList и createOptionsList
+        clearLocationList();  // чистим список для следующего обновления
     }
 
     // если выбран диапазон времени от дома до метро ОТ 20 - 30 МИНУТ
@@ -61,10 +64,13 @@ buttonFilter.addEventListener('click', (evt) => {
             }
         });
         
-        const dead = createDeadLineList();
-        console.log(dead);
-        createList(dead);
-        clearLocationList();
+        dead = createDeadLineList();  //отфильтрованный locationList функцией createDeadLineList добавляем в пустой массив и отправляем его на следующую фильтровку в createOptionsList
+
+        const options = createOptionsList();  //отфильтрованный массив dead
+
+        console.log(options);
+        createList(options);  // создаём список после фильтра createDeadLineList и createOptionsList
+        clearLocationList();  // чистим список для следующего обновления
     }
 
      // если выбран диапазон времени от дома до метро БОЛЬШЕ 30 МИНУТ
@@ -76,10 +82,13 @@ buttonFilter.addEventListener('click', (evt) => {
             }
         });
         
-        const dead = createDeadLineList();
-        console.log(dead);
-        createList(dead);
-        clearLocationList();
+        dead = createDeadLineList();  //отфильтрованный locationList функцией createDeadLineList добавляем в пустой массив и отправляем его на следующую фильтровку в createOptionsList
+
+        const options = createOptionsList();  //отфильтрованный массив dead
+
+        console.log(options);
+        createList(options);  // создаём список после фильтра createDeadLineList и createOptionsList
+        clearLocationList();  // чистим список для следующего обновления
     }
 
     // если выбран диапазон времени ЛЮБОЙ
@@ -91,16 +100,19 @@ buttonFilter.addEventListener('click', (evt) => {
             }
         });
         
-        const dead = createDeadLineList();
-        console.log(dead);
-        createList(dead);
-        clearLocationList();
+        dead = createDeadLineList();  //отфильтрованный locationList функцией createDeadLineList добавляем в пустой массив и отправляем его на следующую фильтровку в createOptionsList
+
+        const options = createOptionsList();  //отфильтрованный массив dead
+
+        console.log(options);
+        createList(options);  // создаём список после фильтра createDeadLineList и createOptionsList
+        clearLocationList();  // чистим список для следующего обновления
     }
 
 })
 
 export { locationList };
-// export { dead };
+export { dead };
 
 
 
