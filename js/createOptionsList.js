@@ -14,22 +14,43 @@ function createOptionsList() {
         optionsChecked.push(childrenParent);
     })
 
+    console.log(optionsChecked);
+
+
+
+
+
     dead.forEach(option => {
 
         let arrFeaturesJson = option.offer.features;
+
         console.log(arrFeaturesJson);
 
-        for(let i = 0; i <= optionsChecked.length; i++) {
-           for(let j = 0; j <= arrFeaturesJson.length; j++) {
-               if(optionsChecked[i] === option.offer.features[i]) {
-                finalList.push(option);
-               }
-               if(finalList[i] === finalList[i]) {
-                break;
-               }
-           }
-           
-        }
+        arrFeaturesJson.filter(function(options) {
+            for(let i = 0; i <= optionsChecked.length; i++) {
+                if(optionsChecked[i] === options) {
+                    finalList.push(option);
+                }
+            } 
+             
+        });
+
+
+
+
+
+        // for(let i = 0; i <= optionsChecked.length; i++) {
+        //    for(let j = 0; j <= arrFeaturesJson.length; j++) {
+        //     //    let optiCheck = optionsChecked[i];
+
+        //        if(optionsChecked[i] === arrFeaturesJson[j]) {
+        //         finalList.push(option);
+        //        }
+        //        if(finalList[i] === finalList[i]) {
+        //         break;
+        //        }
+        //    }
+        // }
         
     })
 
