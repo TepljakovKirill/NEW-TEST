@@ -4,11 +4,11 @@ function createOptionsList() {
 
     const optionList = Array.from(document.querySelectorAll("input.checkbox__real[type='checkbox']:checked"));
 
-    let finalList = [];
+    let finalList = [];   //массив для финального отображения (после всех фильтров) списка объявлений
     
-    let optionsChecked = [];
+    let optionsChecked = [];   //  массив чекбоксов ДОПОЛНИТЕЛЬНОЙ СЕКЦИИ
 
-    optionList.forEach((option) => {
+    optionList.forEach((option) => {      // формирую массив чекбоксов ДОПОЛНИТЕЛЬНОЙ СЕКЦИИ
         const parent = option.parentNode;
         const childrenParent = parent.querySelector('.checkbox > .checkbox__title').textContent;
         optionsChecked.push(childrenParent);
@@ -19,26 +19,23 @@ function createOptionsList() {
 
 
 
+    dead.forEach(option => {  // формирую массив finalList(dead получил из filter.js после фильтра БЛИЗОСТЬ К МЕТРО и СРОК СДАЧИ)
 
-    dead.forEach(option => {
-
-        let arrFeaturesJson = option.offer.features;
+        let arrFeaturesJson = option.offer.features;  //  получаю массив опций одного объявления
 
         console.log(arrFeaturesJson);
 
-        arrFeaturesJson.filter(function(options) {
+        arrFeaturesJson.filter(function(options) {  // фильтрую массив опций(features) одного объявления согласно чекбокса ДОПОЛНИТЕЛЬНЫЕ ОПЦИИ
+            
             for(let i = 0; i <= optionsChecked.length; i++) {
-                if(optionsChecked[i] === options) {
+                if(optionsChecked.length === 1 && optionsChecked[i] === options) {
                     finalList.push(option);
-                }
-                // if(optionsChecked.length > 1 && optionsChecked[i] === options[i]) {
-                //     finalList.push(option);
-                // }
-            } 
-             
-        });
 
-        
+                } else if (optionsChecked.length > 1) {
+                   console.log('Так я не могу(((');
+                }
+            }  
+        });
     })
 
 
