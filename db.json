@@ -7,7 +7,7 @@
             "offer": {
                 "title": "ЖК Ильинские луга",
                 "timeToMetro": 10,
-                "deadline": "сдан",
+                "deadline": "Сдан",
                 "metro": "Октябрьская",
                 "adress": "пр. Льва Толстого 180А",
                 "features": [
@@ -23,7 +23,7 @@
             "offer": {
                 "title": "ЖК Марусина лужа",
                 "timeToMetro": 18,
-                "deadline": "в этом году",
+                "deadline": "В этом году",
                 "metro": "Новослободская",
                 "adress": "пр. Уныния 13",
                 "features": [
@@ -40,7 +40,7 @@
             "offer": {
                 "title": "ЖК Иван да Марья",
                 "timeToMetro": 25,
-                "deadline": "в следующем году",
+                "deadline": "В следующем году",
                 "metro": "Киевская",
                 "adress": "ул. Жмурки 149",
                 "features": [
@@ -57,7 +57,7 @@
             "offer": {
                 "title": "ЖК Молодёжный",
                 "timeToMetro": 35,
-                "deadline": "сдан",
+                "deadline": "Сдан",
                 "metro": "Парк Победы",
                 "adress": "ул. Любви 19",
                 "features": [
@@ -74,7 +74,7 @@
             "offer": {
                 "title": "ЖК Молодёжный",
                 "timeToMetro": 35,
-                "deadline": "сдан",
+                "deadline": "В этом году",
                 "metro": "Парк Победы",
                 "adress": "ул. Любви 19",
                 "features": [
@@ -91,7 +91,7 @@
             "offer": {
                 "title": "ЖК Пенсионный",
                 "timeToMetro": 10,
-                "deadline": "сдан",
+                "deadline": "В следующем году",
                 "metro": "Киевская",
                 "adress": "пр. Пенсии 1",
                 "features": [
@@ -108,7 +108,7 @@
             "offer": {
                 "title": "ЖК Звериный",
                 "timeToMetro": 50,
-                "deadline": "В следующем году",
+                "deadline": "Сдан",
                 "metro": "Солярис",
                 "adress": "ул. Дальняя 259",
                 "features": [
@@ -142,7 +142,7 @@
             "offer": {
                 "title": "ЖК Детский",
                 "timeToMetro": 10,
-                "deadline": "Сдан",
+                "deadline": "В следующем году",
                 "metro": "Карамелька",
                 "adress": "ул. Детская 10",
                 "features": [
@@ -176,7 +176,7 @@
             "offer": {
                 "title": "ЖК Дальний",
                 "timeToMetro": 55,
-                "deadline": "В следующем году",
+                "deadline": "В этом году",
                 "metro": "Хуторок",
                 "adress": "ул. Последняя 105",
                 "features": [
@@ -193,7 +193,7 @@
             "offer": {
                 "title": "ЖК Звериный",
                 "timeToMetro": 14,
-                "deadline": "В этом году",
+                "deadline": "В следующем году",
                 "metro": "Зоопарк",
                 "adress": "ул. Полосатая 15",
                 "features": [

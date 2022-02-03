@@ -150,6 +150,11 @@
 	background-color: #d8d8d8;
 }
 
+.btn-more:disabled {
+	background-color: #d8d8d8;
+	cursor: not-allowed;
+}
+
 .btn-more img {
 	display: inline-block;
 	margin-right: 10px;
