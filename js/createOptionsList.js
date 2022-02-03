@@ -5,7 +5,7 @@ function createOptionsList() {
     const optionList = Array.from(document.querySelectorAll("input.checkbox__real[type='checkbox']:checked"));
 
     let finalList = [];   //массив для финального отображения (после всех фильтров) списка объявлений
-    
+
     let optionsChecked = [];   //  массив чекбоксов ДОПОЛНИТЕЛЬНОЙ СЕКЦИИ
 
     optionList.forEach((option) => {      // формирую массив чекбоксов ДОПОЛНИТЕЛЬНОЙ СЕКЦИИ
@@ -16,28 +16,28 @@ function createOptionsList() {
 
     console.log(optionsChecked);
 
+    finalList =  dead.filter((card) =>  {
+        // фильтрую общий массив dead, в функции мы получаем одно объявление card
+
+        for (let item in optionsChecked) {
+            //выбранные опции в фильтре
+            const itemChecked = optionsChecked[item];
+            //Опции у текущего объявления
+            const features = card.offer.features;
+            //ищем в features выбранные опции
+            let resultSearch = features.find((i) => i === itemChecked);
+            //Если хоть одна не найдена выходим из цикла и возращаем false
+            if(!resultSearch) {
+                return false;
+            }
+        }
+        //Цикл ни разу не вернул false - значит все опции найдены
+        return true;
+    });
 
 
 
-    dead.forEach(option => {  // формирую массив finalList(dead получил из filter.js после фильтра БЛИЗОСТЬ К МЕТРО и СРОК СДАЧИ)
-
-        let arrFeaturesJson = option.offer.features;  //  получаю массив опций одного объявления
-
-        console.log(arrFeaturesJson);
-
-        arrFeaturesJson.filter(function(options) {  // фильтрую массив опций(features) одного объявления согласно чекбокса ДОПОЛНИТЕЛЬНЫЕ ОПЦИИ
-            
-            for(let i = 0; i <= optionsChecked.length; i++) {
-                if(optionsChecked.length === 1 && optionsChecked[i] === options) {
-                    finalList.push(option);
-
-                } else if (optionsChecked.length > 1) {
-                   console.log('Так я не могу(((');
-                }
-            }  
-        });
-    })
-
+    console.log(finalList);
 
     return finalList;
 }
